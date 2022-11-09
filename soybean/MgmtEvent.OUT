@@ -1,0 +1,38 @@
+*MANAGEMENT OPERATIONS EVENT SUMMARY
+
+*DSSAT Cropping System Model Ver. 4.8.0.027 -release  NOV 09, 2022 14:44:16
+!---------------------------------------------------------------------------------------------
+@RUN Date........  DOY    DAS    DAP  CR  Stage         Operation       Quantities
+!---------------------------------------------------------------------------------------------
+   1 JUN 20, 1985  171      1      0  SB                Planting       
+   1 JUN 20, 1985  171      1      0  SB  15 Sowing    
+   1 JUN 20, 1985  171      1      0  SB                Organic matter    1000 kg[DM]/ha
+   1 JUN 21, 1985  172      2      1  SB                Irrigation        13.0 mm
+   1 JUN 24, 1985  175      5      4  SB                Irrigation        10.0 mm
+   1 JUN 25, 1985  176      6      5  SB  03 End Juven.
+   1 JUL  2, 1985  183     13     12  SB  02 Unifoliate
+   1 JUL  7, 1985  188     18     17  SB  04 Flower Ind
+   1 JUL 10, 1985  191     21     20  SB                Irrigation        13.0 mm
+   1 JUL 18, 1985  199     29     28  SB                Irrigation        10.0 mm
+   1 JUL 24, 1985  205     35     34  SB                Irrigation        10.0 mm
+   1 JUL 28, 1985  209     39     38  SB                Irrigation        15.0 mm
+   1 AUG  8, 1985  220     50     49  SB  05 First Flwr
+   1 AUG 25, 1985  237     67     66  SB  12 End Msnode
+   1 AUG 26, 1985  238     68     67  SB  06 First Pod 
+   1 SEP  5, 1985  248     78     77  SB  08 First Seed
+   1 SEP  9, 1985  252     82     81  SB  13 End Leaf  
+   1 SEP 10, 1985  253     83     82  SB                Irrigation        15.0 mm
+   1 SEP 19, 1985  262     92     91  SB                Irrigation         8.0 mm
+   1 SEP 20, 1985  263     93     92  SB                Irrigation         8.0 mm
+   1 SEP 22, 1985  265     95     94  SB  09 End Pod   
+   1 SEP 24, 1985  267     97     96  SB                Irrigation        15.0 mm
+   1 SEP 27, 1985  270    100     99  SB                Irrigation        15.0 mm
+   1 SEP 30, 1985  273    103    102  SB                Irrigation        13.0 mm
+   1 OCT  4, 1985  277    107    106  SB                Irrigation        19.0 mm
+   1 OCT 14, 1985  287    117    116  SB                Irrigation        15.0 mm
+   1 OCT 18, 1985  291    121    120  SB  10 Phys. Mat 
+   1 OCT 19, 1985  292    122    121  SB                Irrigation        19.0 mm
+   1 OCT 25, 1985  298    128    127  SB                Irrigation        19.0 mm
+   1 OCT 30, 1985  303    133    132  SB  16 Harvest   
+   1 OCT 30, 1985  303    133    132  SB                Harvest Yield    3597. kg/ha
+ 

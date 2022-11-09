@@ -1,0 +1,34 @@
+*MANAGEMENT OPERATIONS EVENT SUMMARY
+
+*DSSAT Cropping System Model Ver. 4.8.0.027 -release  NOV 08, 2022 16:40:16
+!---------------------------------------------------------------------------------------------
+@RUN Date........  DOY    DAS    DAP  CR  Stage         Operation       Quantities
+!---------------------------------------------------------------------------------------------
+   1 MAR 30, 1988  090      1      0  MZ  14 Start Sim 
+   1 APR  6, 1988  097      8      0  MZ                Planting       
+   1 APR  6, 1988  097      8      0  MZ  07 Sowing    
+   1 APR  7, 1988  098      9      1  MZ  08 Germinate 
+   1 APR 16, 1988  107     18     10  MZ                Fertilizer         66. kg[N]/ha 
+   1 APR 26, 1988  117     28     20  MZ  09 Emergence 
+   1 MAY 12, 1988  133     44     36  MZ  01 End Juveni
+   1 MAY 16, 1988  137     48     40  MZ                Fertilizer         66. kg[N]/ha 
+   1 MAY 19, 1988  140     51     43  MZ  02 Floral Ini
+   1 MAY 21, 1988  142     53     45  MZ                Irrigation        26.3 mm
+   1 MAY 31, 1988  152     63     55  MZ                Irrigation        27.0 mm
+   1 JUN  5, 1988  157     68     60  MZ                Fertilizer         66. kg[N]/ha 
+   1 JUN  7, 1988  159     70     62  MZ                Irrigation        30.0 mm
+   1 JUN 15, 1988  167     78     70  MZ                Irrigation        27.5 mm
+   1 JUN 21, 1988  173     84     76  MZ  03 75% Silkin
+   1 JUN 24, 1988  176     87     79  MZ                Irrigation        28.0 mm
+   1 JUN 29, 1988  181     92     84  MZ                Irrigation        27.3 mm
+   1 JUL  1, 1988  183     94     86  MZ  04 Beg Gr Fil
+   1 JUL  5, 1988  187     98     90  MZ                Irrigation        27.2 mm
+   1 JUL 13, 1988  195    106     98  MZ                Irrigation        26.3 mm
+   1 JUL 27, 1988  209    120    112  MZ                Irrigation        28.6 mm
+   1 AUG  1, 1988  214    125    117  MZ                Irrigation        26.3 mm
+   1 AUG  6, 1988  219    130    122  MZ                Irrigation        27.0 mm
+   1 AUG 13, 1988  226    137    129  MZ  05 End Gr Fil
+   1 AUG 13, 1988  226    137    129  MZ                Irrigation        27.8 mm
+   1 AUG 16, 1988  229    140    132  MZ  16 Harvest   
+   1 AUG 16, 1988  229    140    132  MZ                Harvest Yield   11680. kg/ha
+ 
