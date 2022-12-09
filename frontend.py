@@ -9,7 +9,7 @@ import numpy as np
 
 # Config
 st.set_page_config(
-    page_title='롯데상사 옥수수 / 대두 농장 모니터링'
+    page_title='천안시 성환읍 농가 모니터링'
 )
 config = configparser.ConfigParser()
 config.read('config.ini')
@@ -39,10 +39,10 @@ map = pd.DataFrame(
      'lon': [43.1333, 43.111]}
 )
 
-st.markdown("## 관리할 작물 선택")
-crop_to_select = st.radio('관리할 작물', ('옥수수', '대두'))
+crop_to_select = '쌀'
 crop_code = {'옥수수': 'maize',
-             '대두': 'soybean'}
+             '대두': 'soybean',
+             '쌀': 'rice'}
 # Read Data
 summary = parse_summary('{0}/summary.csv'.format(crop_code[crop_to_select]))
 events_sol = parse_mgmtevent('{0}/MgmtEvent.OUT'.format(crop_code[crop_to_select]))['Solution']
@@ -55,14 +55,13 @@ Today = datetime.datetime(2022, 5, 7) if crop_to_select == '옥수수' else date
 to_day = lambda x: datetime.datetime(2022, 1, 1) + datetime.timedelta(int(x) - 1)
 st.markdown("### {0}".format(Today.strftime("%Y - %m - %d")))
 
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(2)
 planting_date = to_day(int(str(summary['Planting'])[4:]))
 germinate_date = to_day(int(str(summary['Germinate'])[4:]))
-harvest_date = to_day(int(str(summary['Harvest'])[4:]))
+harvest_date = to_day(int(str(summary['Harvest'])[4:])+32)
 
-col1.metric("파종일", planting_date.strftime("%Y - %m - %d"), (Today-planting_date).days)
-col2.metric("발아일", germinate_date.strftime("%Y - %m - %d"), (Today-germinate_date).days)
-col3.metric("수확일", harvest_date.strftime("%Y - %m - %d"), (Today-harvest_date).days)
+col1.metric("모내기", planting_date.strftime("%Y - %m - %d"), (Today-planting_date).days)
+col2.metric("수확일", harvest_date.strftime("%Y - %m - %d"), (Today-harvest_date).days)
 
 st.markdown('')
 
@@ -86,10 +85,10 @@ st.dataframe(events_sol,
              width=10000)
 
 st.markdown("## 생육 모니터링")
-st.markdown("### 현재 {0}는 *{1}*입니다".format(crop_to_select, '경엽 신장기'))
+st.markdown("### 현재 {0}는 *{1}*입니다".format(crop_to_select, '무효 분얼기'))
 st.markdown("**현 시기에 해야 할 농작업은 아래와 같습니다**")
-st.markdown("* 웃거름 주기")
-st.markdown("* 습해 대비하기")
+st.markdown("* 둑 열기 (중간 물떼기): 뿌리의 활력을 증대시키고 질소 흡수율을 줄여 도복을 방지")
+st.markdown("* 논바닥에 살짝 실금이 갈 정도로 물을 빼야 합니다")
 
 st.subheader("엽면적지수")
 st.area_chart(plantgro["LAID"])
